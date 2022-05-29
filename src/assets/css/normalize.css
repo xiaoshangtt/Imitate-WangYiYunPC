@@ -1,0 +1,463 @@
+html {
+  width: 100%;
+  --default-main-width: 1100px;
+  --default-main-topbar-bgc: #242424;
+  --defualt-subnav-bgc: #c20c0c;
+  --default-banner-width: 980px;
+  --default-music-player-height: 70px;
+}
+body {
+  width: 100%;
+  min-width: 1100px;
+  overflow: hidden;
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-text-size-adjust: none;
+}
+/* body添加overflow:hidden放置移动端滑出到屏幕外 */
+/* 然后在容器#app设置高度为视口高度，然后溢出部分显示滚动条 */
+#app {
+  height: 100vh;
+  overflow-y: auto;
+}
+body >>> .suggest {
+  color: #0c73c2;
+}
+
+body,
+html,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+header,
+menu,
+section,
+p,
+input,
+td,
+th {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+em {
+  font-style: normal;
+}
+i {
+  text-decoration: none;
+  font-style: normal;
+}
+
+textarea {
+  resize: none;
+  outline: none;
+}
+/* 让所有p元素都可以将文本的\n等文本中才有的转义符生效 */
+p {
+  white-space: pre-line;
+}
+
+.hover_underline:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* 清除浮动 */
+.clearfix::before,
+.clearfix::after {
+  content: "";
+  display: table;
+}
+.clearfix::after {
+  clear: both;
+}
+.clearfix {
+  *zoom: 1;
+}
+
+.cursor_pointer {
+  cursor: pointer;
+}
+.cursor_not_allowed {
+  cursor: not-allowed;
+}
+
+.q-icon,
+.q-icon2 {
+  display: inline-block;
+  vertical-align: bottom;
+  margin: 0 3px;
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+  background-position: 0 9999px;
+}
+.q-icon {
+  background-image: url(~@/assets/images/icon.png);
+}
+.q-icon2 {
+  background-image: url(~@/assets/images/icon2.png);
+}
+.q-icon2-tip {
+  width: 18px;
+  height: 18px;
+  background-position: 0 -50px;
+}
+
+/* 语种的图标 */
+.q-icon-0 {
+  background-position: -20px -735px !important;
+}
+/* 风格的图标 */
+.q-icon-1 {
+  background-position: 0 -60px !important;
+}
+/* 场景的图标 */
+.q-icon-2 {
+  background-position: 0 -88px !important;
+}
+/* 情感的图标 */
+.q-icon-3 {
+  background-position: 0 -117px !important;
+}
+/* 主题的图标 */
+.q-icon-4 {
+  background-position: 0 -141px !important;
+}
+
+.q-icon-clock {
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  background-position: -18px -682px;
+  vertical-align: middle;
+  margin-top: -3px;
+}
+.q-icon-artist-icon {
+  width: 17px;
+  height: 18px;
+  background-position: 0 -740px;
+}
+.q-icon-up {
+  background-position: -74px -299px;
+}
+.q-icon-down {
+  background-position: -74px -318px;
+}
+.q-icon-new {
+  background-position: -67px -283px;
+}
+.q-icon-user {
+  width: 14px;
+  height: 15px;
+  background-position: -50px -300px;
+}
+
+/* 带耳机的图标 */
+.q-icon-21 {
+  width: 64px;
+  height: 50px;
+  background-position: 0px -347px;
+}
+
+.q-icon-four {
+  width: 18px !important;
+  height: 18px !important;
+  vertical-align: middle;
+  margin: 0 8px;
+  text-indent: -999;
+}
+.q-icon-add {
+  width: 13px;
+  height: 13px;
+  background-position: 0 -700px;
+}
+.q-icon-add:hover {
+  background-position: -22px -700px;
+}
+.q-icon-store {
+  background-position: 0 -174px !important;
+}
+.q-icon-store:hover {
+  background-position: -20px -174px !important;
+}
+.q-icon-share {
+  background-position: 0 -195px !important;
+}
+.q-icon-share:hover {
+  background-position: -20px -195px !important;
+}
+.q-icon-download {
+  background-position: -81px -174px !important;
+}
+.q-icon-download:hover {
+  background-position: -104px -174px !important;
+}
+
+.button {
+  background: url(~@/assets/images/button.png) no-repeat 0 -9999px;
+}
+.button2 {
+  background: url(~@/assets/images/button2.png) no-repeat 0 -9999px;
+}
+
+.opacity0 {
+  opacity: 0;
+}
+
+.one-ellipsis {
+  width: 100%;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.two-ellipsis {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.coverall {
+  background-repeat: no-repeat;
+  background-image: url(~@/assets/images/coverall.png);
+}
+
+.coverall-mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 150px;
+  height: 150px;
+  z-index: 99;
+  background-position: -230px -380px;
+}
+.coverall-m-bg {
+  width: 153px;
+  height: 130px;
+  background-position: 0 -845px;
+}
+.iconall {
+  background: url(~@/assets/images/iconall.png) no-repeat;
+}
+
+.iconall-mask {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 22px;
+  height: 22px;
+  background-position: 0 -85px;
+  margin: -11px 0 0 -11px;
+  z-index: 20;
+  background-position: 0 -85px;
+}
+.iconall-ply {
+  width: 28px;
+  height: 28px;
+  background-position: 0 -140px;
+}
+
+.sprite {
+  background: url(~@/assets/images/sprite.png) no-repeat 0 -9999px;
+}
+
+.vip-6 {
+  background-image: url(https://p5.music.126.net/obj/wo3DlcOGw6DClTvDisK1/4357872499/0cd3/2985/4070/5951d11609c60e3aa96ebddeb6bb8284.png);
+}
+
+.vip-level {
+  width: 57px;
+  height: 36px;
+  background-size: 100% 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.no-vip {
+  background: url(https://p5.music.126.net/obj/wo3DlcOGw6DClTvDisK1/4357872257/9f40/483a/0341/78d106c94bf17f8f1e98a2f6748061c4.png);
+}
+
+.grade {
+  display: inline-block;
+  line-height: 21px;
+  color: #e03a24;
+  padding-left: 29px;
+  height: 19px;
+  font-size: 14px;
+  margin: 0 10px;
+  margin-bottom: 3px;
+  vertical-align: middle;
+}
+.grade-lv {
+  background: url(@/assets/images/icon2.png) no-repeat -135px -190px;
+}
+.grade-vl {
+  float: right;
+  height: 19px;
+  width: 9px;
+  background: url(@/assets/images/icon2.png) no-repeat -191px -190px;
+}
+
+.gender,
+.gendersm {
+  vertical-align: middle;
+  display: inline-block;
+
+  background-repeat: no-repeat;
+  background-image: url(~@/assets/images/icon.png);
+  margin-bottom: 3px;
+}
+.gender {
+  width: 20px;
+  height: 20px;
+}
+.gendersm {
+  width: 14px;
+  height: 15px;
+}
+.gender-1 {
+  background-position: -41px -57px;
+}
+.gender-2 {
+  background-position: -41px -27px;
+}
+.gendersm-1 {
+  background-position: -70px -20px;
+}
+.gendersm-2 {
+  background-position: -70px 0;
+}
+
+.btn {
+  padding: 4px 0 0 15px;
+  cursor: pointer;
+  margin: 0 10px;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.u-btn {
+  width: 75px;
+  height: 31px;
+  display: inline-block;
+  background-image: url(~@/assets/images/button.png);
+  background-repeat: no-repeat;
+  padding-left: 30px;
+  font-size: 12px;
+  line-height: 22px;
+}
+.u-btn-7 {
+  background-position: 0 -810px;
+}
+.u-btn-8 {
+  color: white;
+  background-position: 0 -720px;
+}
+
+.q-icon2-ic {
+  width: 68px;
+  height: 20px;
+  display: inline-block;
+}
+.q-icon2-yyr {
+  background-position: -150px -480px;
+}
+.q-icon2-dr {
+  background-position: -75px -480px;
+}
+/* 音乐图标 */
+.q-icon2-music {
+  width: 16px;
+  height: 17px;
+  background-position: -50px -20px;
+}
+/* 五角星 */
+.q-icon2-pentagram {
+  width: 14px;
+  height: 14px;
+  background-position: -50px 0;
+}
+
+.q-table {
+  display: inline-block;
+  margin-top: 10px;
+  width: 17px;
+  height: 17px;
+  background: url(~@/assets/images/table.png) no-repeat 0 -9999px;
+}
+
+.table {
+  background: url(~@/assets/images/table.png) repeat-x;
+  background-color: #f7f7f7;
+}
+
+.table-bg {
+  background-position: 0px -56px;
+}
+
+.q-table-ply {
+  background-position: 0 -103px;
+}
+.q-table-ply:hover {
+  background-position: 0 -128px;
+}
+
+.add-white {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url(~@/assets/images/add-white.png);
+  background-size: contain;
+  vertical-align: middle;
+}
+
+.frd_dyn_sprite {
+  background: url(~@/assets/images/frd_dyn_sprite.png);
+}
+
+.frd_dyn_sprite-white {
+  width: 40px;
+  height: 40px;
+  opacity: 0.8;
+  cursor: pointer;
+  background-position: -100px -70px;
+}
+.frd_dyn_sprite-give {
+  width: 14px;
+  height: 14px;
+  background-position: 0 -20px;
+  vertical-align: top;
+}
+
+.radio-bg {
+  background: url(~@/assets/images/radio_bg.png) no-repeat 0 9999px;
+}
+.radio-bg-active {
+  background-position: -70px 0;
+  color: #d35757 !important;
+}
+
+.singer {
+  background: url(~@/assets/images/singer.png);
+}
+.singer-default {
+  background-position: 0 -30px;
+}
+.singer-active {
+  background-position: 0 0;
+}

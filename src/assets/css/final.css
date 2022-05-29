@@ -1,0 +1,79 @@
+.mymusic {
+  background: url(~@/assets/images/mymusic.png) no-repeat;
+}
+
+.notlogin {
+  background: url(~@/assets/images/notlogin.jpg) no-repeat;
+}
+
+.index {
+  background: url(~@/assets/images/index.png) no-repeat;
+}
+.index_bill {
+  background: url(~@/assets/images/index_bill.png) no-repeat;
+}
+.ban_mask {
+  background: url(~@/assets/images/ban_mask.png) no-repeat;
+}
+.tab {
+  background: url(~@/assets/images/tab.png) no-repeat;
+}
+.cnt_radio {
+  background: url(~@/assets/images/cnt_radio.png) no-repeat;
+}
+.cnt_radio-asc,
+.cnt_radio-desc {
+  float: left;
+  width: 29px;
+  height: 25px;
+}
+.cnt_radio-asc {
+  background-position: -40px 0;
+}
+.cnt_radio-asc-active {
+  background-position: -40px -30px;
+}
+.cnt_radio-desc {
+  background-position: 0 0;
+}
+.cnt_radio-desc-active {
+  background-position: 0 -30px;
+}
+.cnt_radio-label {
+  background-position: 0 -100px;
+}
+
+.q-icon-sh {
+  display: inline-block;
+  vertical-align: middle;
+  width: 14px;
+  height: 15px;
+  background: url(~@/assets/images/icon.png) no-repeat;
+}
+
+.q-icon-sh-songs {
+  background-position: -35px -300px;
+}
+.q-icon-sh-artists {
+  background-position: -50px -300px;
+}
+.q-icon-sh-albums {
+  background-position: -35px -320px;
+}
+.q-icon-sh-playlists {
+  background-position: -50px -320px;
+}
+.foot_enter_new {
+  background: url(~@/assets/images/foot_enter_new.png);
+  background-size: 110px 552px;
+}
+.foot_enter_tt {
+  background: url(~@/assets/images/foot_enter_tt.png);
+  background-size: 180px 139px;
+}
+.playbar {
+  background: url(~@/assets/images/playbar.png) 0 9999px;
+}
+.statbar {
+  background: url(~@/assets/images/statbar.png) 0 999px;
+}
