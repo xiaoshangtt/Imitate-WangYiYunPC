@@ -2,7 +2,7 @@
 
 只有前端页面，后端需要自行去
 
-[Binaryify/NeteaseCloudMusicApi: 网易云音乐 Node.js API service (github.com)](https://github.com/Binaryify/NeteaseCloudMusicApi)下载(v-4.5.11 or 4.6)，来配合这个项目运行
+[Binaryify/NeteaseCloudMusicApi: 网易云音乐 Node.js API service (github.com)](https://github.com/Binaryify/NeteaseCloudMusicApi)下载(v-4.5.11 or v-4.6)，来配合这个项目运行
 
 请求url也是localhost:3000
 
